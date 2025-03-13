@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Consultorios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Gestión de Horarios Médicos</h1>
+        <label for="botones-consultorios">Seleccione un consultorio:</label>
+        <div id="botones-consultorios"></div>
+    </div>
+
+    <!-- Título dinámico del consultorio se insertará aquí mediante JavaScript -->
+    
+    <div id="tablas-container"></div>
+
+    <button id="descargar-excel" class="excel-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Descargar Excel
+    </button>
+
+    <div class="resumen-container">
+        <h2>Horas por Especialidad (Consultorio Actual)</h2>
+        <ul id="resumen-horas"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
